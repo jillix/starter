@@ -1,0 +1,14 @@
+{
+    "roles": {
+        "admin": true,
+        "session": true
+    },
+    "name": "main",
+    "lable": "Main",
+    "adapter": "mongodb",
+    "config": {
+        "host": "localhost",
+        "port": 27017,
+        "database": "project_starter"
+    }
+}

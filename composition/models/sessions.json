@@ -1,0 +1,16 @@
+{
+    "roles": {
+        "admin": true,
+        "session": true
+    },
+    "access": "crud",
+    "adapter": "modm",
+    "entity": "sessions",
+    "label": "Sessions",
+    "name": "sessions",
+    "schema": {
+        "_id": {},
+        "name": {}
+    },
+    "store": "main"
+}
