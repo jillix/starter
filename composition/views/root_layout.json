@@ -1,0 +1,13 @@
+{
+    "roles": {
+        "*": true
+    },
+    "name": "root_layout",
+    "html": "root.html",
+    "to": "body",
+    "css": [
+        "/bootstrap/css/bootstrap.min.css",
+        "/bootstrap/css/bootstrap-theme.min.css",
+        "/style.css"
+    ]
+}
