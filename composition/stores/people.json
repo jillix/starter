@@ -1,0 +1,11 @@
+{
+    "roles": {
+        "*": true
+    },
+    "name": "people",
+    "label": "People",
+    "adapter": "orientdb",
+    "config": {
+        "database": "people"
+    }
+}

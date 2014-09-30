@@ -1,0 +1,16 @@
+{
+    "roles": {
+        "*": true
+    },
+    "access": "crud",
+    "adapter": "orientdb",
+    "entity": "people",
+    "label": "People",
+    "name": "people",
+    "schema": {
+        "name": { "type": "string" },
+        "age": { "type": "integer" },
+        "married": { "type": "boolean" }
+    },
+    "store": "people"
+}
