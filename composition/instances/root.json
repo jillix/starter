@@ -2,9 +2,7 @@
     "roles": {
         "*": true
     },
-    "name": [
-        "root"
-    ],
+    "name": "root",
     "config": {
         "client": {
             "title": "Hello, World!"
@@ -16,6 +14,10 @@
             {
                 "type": "V",
                 "name": "layout"
+            },
+            {
+                "type": "I",
+                "name": "orient_api"
             }
         ]
     }
