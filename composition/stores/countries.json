@@ -2,10 +2,10 @@
     "roles": {
         "*": true
     },
-    "name": "people",
-    "label": "People",
+    "name": "countries",
+    "label": "Countries",
     "adapter": "orientdb",
     "config": {
-        "database": "people"
+        "database": "countries"
     }
 }

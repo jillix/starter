@@ -12,5 +12,5 @@
         "age": { "type": "integer" },
         "married": { "type": "boolean" }
     },
-    "store": "people"
+    "store": "countries"
 }
