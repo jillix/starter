@@ -8,6 +8,12 @@
             "module": "Z.Starter.orient"
         }
     },
+    "links": [
+        {
+            "event": "m>",
+            "call": "_request"
+        }
+    ],
     "module": "github_jillix_joint_v0.0.1",
     "L": {
         "scripts": [
