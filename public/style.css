@@ -1,7 +1,51 @@
 body {
-  padding-top: 50px;
+    font-family: Monaco, monospace;
+    background: black;
+    color: white;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+
+pre.console {
+    margin-bottom: 0;
+    font-size: 30px;
+    background: #34495e;
+    border: 4px solid #2c3e50;
+    border-radius: 4px 4px 0 0;
+    color: #2ecc71;
+    font-family: monaco, monospace;
+    font-weight: bold;
+    max-height: 920px;
+}
+
+textarea.js-code-to-run {
+    border: 4px solid #2ecc71;
+    background: #34495e;
+    padding: 10px 10px 0;
+    width: 100%;
+    font-size: 16px;
+    height: 43px;
+    outline: none;
+    resize: vertical;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+/* console colors */
+pre span.info  { color: #D2FF7C; }
+pre span.debug  { color: #3498db; }
+pre span.error { color: #e74c3c; }
+pre span.warn  { color: #f1c40f; }
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #A9A9A9;
 }
