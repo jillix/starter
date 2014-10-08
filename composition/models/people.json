@@ -12,5 +12,16 @@
         "age": { "type": "integer" },
         "married": { "type": "boolean" }
     },
+    "queries": [
+        {
+            "name": "getPerson",
+            "request": {
+                "query": "select from people where name=:name"
+            },
+            "add": {
+                "params": "params"
+            }
+        }
+    ],
     "store": "countries"
 }
