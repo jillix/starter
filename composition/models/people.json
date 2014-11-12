@@ -1,0 +1,27 @@
+{
+    "roles": {
+        "*": true
+    },
+    "access": "crud",
+    "adapter": "orientdb",
+    "entity": "people",
+    "label": "People",
+    "name": "people",
+    "schema": {
+        "name": { "type": "string" },
+        "age": { "type": "integer" },
+        "married": { "type": "boolean" }
+    },
+    "queries": [
+        {
+            "name": "getPerson",
+            "request": {
+                "query": "select from people where name=:name"
+            },
+            "add": {
+                "params": "params"
+            }
+        }
+    ],
+    "store": "countries"
+}

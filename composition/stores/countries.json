@@ -1,0 +1,11 @@
+{
+    "roles": {
+        "*": true
+    },
+    "name": "countries",
+    "label": "Countries",
+    "adapter": "orientdb",
+    "config": {
+        "database": "countries"
+    }
+}

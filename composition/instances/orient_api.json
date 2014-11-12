@@ -1,0 +1,27 @@
+{
+    "roles": {
+        "*": true
+    },
+    "name": "orient_api",
+    "config": {
+        "client": {
+            "module": "Z.Starter.orient"
+        }
+    },
+    "links": [
+        {
+            "event": "m>",
+            "call": "_request"
+        }
+    ],
+    "module": "github_jillix_joint_v0.0.1",
+    "L": {
+        "scripts": [
+            "/api/orient.js"
+        ],
+        "elms": [{
+            "type": "M",
+            "name": "people"
+        }]
+    }
+}

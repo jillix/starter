@@ -1,0 +1,11 @@
+{
+    "roles": {
+        "*": true
+    },
+    "url": "git@github.com:adioo/joint.git",
+    "name": "github_jillix_joint_v0.0.1",
+    "main": "server/joint.js",
+    "dependencies": [
+        "./joint.js"
+    ]
+}
