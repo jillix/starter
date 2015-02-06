@@ -3,11 +3,19 @@
         "*": true
     },
     "name": "root",
+    "module": "github.com|adioo|view|v0.0.1",
     "config": {
         "client": {
-            "title": "Hello, World!"
-        }
-    },
-    "module": "github_jillix_layout_v0.0.1",
-    "load": [["V", "root_layout"]]
+            "title": "Hello, World!",
+            "to": "body"
+        },
+        "html": {
+            "tmpl": "/root.html"
+        },
+        "css": [
+            "/bootstrap/css/bootstrap.min.css",
+            "/bootstrap/css/bootstrap-theme.min.css",
+            "/style.css"
+        ]
+    }
 }
