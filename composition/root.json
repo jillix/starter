@@ -1,0 +1,13 @@
+{
+    "roles": {
+        "*": true
+    },
+    "name": "root",
+    "config": {
+        "client": {
+            "title": "Hello, World!"
+        }
+    },
+    "module": "github_jillix_layout_v0.0.1",
+    "load": [["V", "root_layout"]]
+}
