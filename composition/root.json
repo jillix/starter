@@ -4,18 +4,35 @@
     },
     "name": "root",
     "module": "github.com|adioo|view|v0.0.1",
-    "config": {
-        "client": {
-            "title": "Hello, World!",
-            "to": "body"
-        },
-        "html": {
-            "tmpl": "/root.html"
+    "client": {
+        "config": {
+            "title": "Hello World",
+            "templates": {
+                "layout": {
+                    "to": "body",
+                    "html": "/root.html",
+                    "render": true,
+                    "pages": true
+                }
+            }
         },
         "css": [
             "/bootstrap/css/bootstrap.min.css",
             "/bootstrap/css/bootstrap-theme.min.css",
             "/style.css"
+        ],
+        "html": [
+            "/root.html"
+        ],
+        "flow": [
+            {
+                "in": "^ready$",
+                "out": [
+                    {
+                        "call": "factory"
+                    }
+                ]
+            }
         ]
     }
 }
