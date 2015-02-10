@@ -3,11 +3,36 @@
         "*": true
     },
     "name": "root",
-    "config": {
-        "client": {
-            "title": "Hello, World!"
-        }
-    },
-    "module": "github_jillix_layout_v0.0.1",
-    "load": [["V", "root_layout"]]
+    "module": "github.com|adioo|view|v0.0.1",
+    "client": {
+        "config": {
+            "title": "Hello World",
+            "templates": {
+                "layout": {
+                    "to": "body",
+                    "html": "/root.html",
+                    "render": true,
+                    "pages": true
+                }
+            }
+        },
+        "css": [
+            "/bootstrap/css/bootstrap.min.css",
+            "/bootstrap/css/bootstrap-theme.min.css",
+            "/style.css"
+        ],
+        "html": [
+            "/root.html"
+        ],
+        "flow": [
+            {
+                "in": "^ready$",
+                "out": [
+                    {
+                        "call": "factory"
+                    }
+                ]
+            }
+        ]
+    }
 }
