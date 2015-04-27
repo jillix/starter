@@ -1,5 +1,6 @@
 {
   "client": {
+    "load": [],
     "config": {
       "title": "Starter Project",
       "template": {
@@ -9,18 +10,21 @@
       }
     },
     "html": [],
+    "css": [],
+    "extFlow": [],
+    "flow": [],
     "markup": [
       "/private.html"
     ],
     "styles": [
-        "/bootstrap/css/bootstrap.min.css",
-        "/bootstrap/css/bootstrap-theme.min.css",
-        "/style.css"
+      "/bootstrap/css/bootstrap.min.css",
+      "/bootstrap/css/bootstrap-theme.min.css",
+      "/style.css"
     ]
   },
   "roles": {
     "*": true
   },
-  "name": "private",
+  "name": "root",
   "module": "view"
 }
