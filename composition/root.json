@@ -1,38 +1,26 @@
 {
-    "roles": {
-        "*": true
+  "client": {
+    "config": {
+      "title": "Starter Project",
+      "template": {
+        "to": "body",
+        "html": "/root.html",
+        "render": true
+      }
     },
-    "name": "root",
-    "module": "github.com|adioo|view|v0.0.1",
-    "client": {
-        "config": {
-            "title": "Hello World",
-            "templates": {
-                "layout": {
-                    "to": "body",
-                    "html": "/root.html",
-                    "render": true,
-                    "pages": true
-                }
-            }
-        },
-        "css": [
-            "/bootstrap/css/bootstrap.min.css",
-            "/bootstrap/css/bootstrap-theme.min.css",
-            "/style.css"
-        ],
-        "html": [
-            "/root.html"
-        ],
-        "flow": [
-            {
-                "in": "^ready$",
-                "out": [
-                    {
-                        "call": "factory"
-                    }
-                ]
-            }
-        ]
-    }
+    "html": [],
+    "markup": [
+      "/private.html"
+    ],
+    "styles": [
+        "/bootstrap/css/bootstrap.min.css",
+        "/bootstrap/css/bootstrap-theme.min.css",
+        "/style.css"
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "name": "private",
+  "module": "view"
 }
