@@ -1,4 +1,7 @@
 {
+  "dependencies": {
+    "view": "adioo/view.git"
+  },
   "name": "starter",
   "version": "0.1.0",
   "author": "jillix <contact@jillix.com>",
