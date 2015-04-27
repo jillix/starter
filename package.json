@@ -1,19 +1,26 @@
 {
-    "name": "starter",
-    "version": "v0.1.0",
-    "author": "Adrian Ottiker <adrian@ottiker.com>",
-    "description": "A basic starter project",
-    "contributors": [
-        {
-            "name": "Adrian Ottiker",
-            "email": "adrian@ottiker.com"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/jillix/starter.git"
-    },
-    "engine": {
-        "node": ">=0.10"
-    }
+  "name": "starter",
+  "version": "0.1.0",
+  "author": "jillix <contact@jillix.com>",
+  "description": "A basic starter project",
+  "contributors": [
+    "Adrian Ottiker <adrian@ottiker.com>",
+    "Ionică Bizău <bizauionica@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jillix/starter.git"
+  },
+  "engine": {
+    "node": ">=0.10"
+  },
+  "bugs": {
+    "url": "https://github.com/jillix/starter/issues"
+  },
+  "homepage": "https://github.com/jillix/starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
 }
