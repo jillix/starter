@@ -1,6 +1,6 @@
 {
   "client": {
-    "load": [],
+    "load": ["list"],
     "config": {
       "title": "Starter Project",
       "templates": {

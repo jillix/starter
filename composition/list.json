@@ -1,0 +1,28 @@
+{
+  "client": {
+    "load": [],
+    "config": {
+      "title": "Starter Project",
+      "templates": {
+        "empty": {
+          "to": ".list",
+          "html": "/list_empty.html"
+        },
+        "item": {
+          "to": ".list",
+          "html": "/list_item.html"
+        }
+      },
+      "detaultTemplate": "layout"
+    },
+    "markup": [
+      "/list_empty.html",
+      "/list_item.html"
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "name": "list",
+  "module": "view"
+}
