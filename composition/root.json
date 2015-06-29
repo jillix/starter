@@ -3,16 +3,15 @@
     "load": [],
     "config": {
       "title": "Starter Project",
-      "template": {
-        "to": "body",
-        "html": "/root.html",
-        "render": true
-      }
+      "templates": {
+        "layout": {
+          "to": "body",
+          "html": "/root.html",
+          "render": true
+        }
+      },
+      "detaultTemplate": "layout"
     },
-    "html": [],
-    "css": [],
-    "extFlow": [],
-    "flow": [],
     "markup": [
       "/root.html"
     ],
