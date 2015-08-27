@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "view": "adioo/view.git"
+    "view": "adioo/view.git",
+    "engine-ruut": "jillix/engine-ruut.git",
+    "engine": "git+ssh://git@github.com/jillix/engine.git"
   },
   "name": "starter",
   "version": "0.1.0",
@@ -23,7 +25,16 @@
   "homepage": "https://github.com/jillix/starter",
   "main": "index.js",
   "scripts": {
+    "start": "engine .",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "entrypoints": {
+    "public": {
+        "*": "root"
+    },
+    "private": {
+        "*": "root"
+    }
   },
   "license": "MIT"
 }
