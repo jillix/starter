@@ -2,14 +2,14 @@
   "client": {
     "config": {
       "routes": [
-        "homepage",
+        "private_layout",
         {}
       ]
     },
     "flow": [
       [
-        "homepage",
-        "homepage/render"
+        "private_layout",
+        "private_layout/render"
       ]
     ]
   },

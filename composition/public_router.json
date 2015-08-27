@@ -1,0 +1,21 @@
+{
+  "client": {
+    "config": {
+      "routes": [
+        "public_layout",
+        {}
+      ]
+    },
+    "flow": [
+      [
+        "public_layout",
+        "public_layout/render"
+      ]
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "name": "public_router",
+  "module": "engine-ruut"
+}

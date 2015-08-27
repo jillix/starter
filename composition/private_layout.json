@@ -5,15 +5,27 @@
       "templates": {
         "layout": {
           "to": "body",
-          "html": "/root.html"
+          "html": "/private.html"
         }
-      }
+      },
+      "domEvents": [
+        {
+          "on": "click",
+          "selector": ".btn-logout",
+          "flow": "logoutBtnClick"
+        }
+      ]
     },
     "html": [],
     "css": [],
-    "flow": [],
+    "flow": [
+      [
+        "logoutBtnClick",
+        [">login/flow", "logoutUser"]
+      ]
+    ],
     "markup": [
-      "/root.html"
+      "/private.html"
     ],
     "styles": [
       "/bootstrap/css/bootstrap.min.css",
@@ -24,6 +36,6 @@
   "roles": {
     "*": true
   },
-  "name": "homepage",
+  "name": "private_layout",
   "module": "view"
 }

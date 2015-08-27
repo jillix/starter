@@ -1,0 +1,51 @@
+{
+  "config": {
+    "credentials": {
+      "service@jillix.com": "devpwd"
+    }
+  },
+  "client": {
+    "config": {
+      "homeUrl": "/",
+      "loginUrl": "/",
+      "successUrl": "/",
+      "emitEvents": true,
+      "redirect": true
+    },
+    "flow": [
+      [
+        "userLoggedIn",
+        ["!public_layout/state", "login_error"],
+        [":navigate", "/"],
+        ":ERES"
+      ],
+      [
+        "userLoggedOut",
+        ["!public_layout/state", "logout_error"],
+        [":navigate", "/"],
+        ":ERES"
+      ],
+      [
+        "validateLogin",
+        [
+          ":ALTR",
+          {
+            "data": {
+              "schema": "login"
+            },
+            "set": {
+              "data.email": "email",
+              "data.pass": "pass"
+            }
+          }
+        ],
+        ":schema/validate"
+      ]
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "name": "login",
+  "module": "login"
+}

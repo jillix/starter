@@ -1,0 +1,99 @@
+{
+  "client": {
+    "config": {
+      "title": "Starter Project",
+      "templates": {
+        "layout": {
+          "to": "body",
+          "html": "/root.html"
+        }
+      },
+      "states": {
+        "login_start": [
+          {
+            "sel": ".splash",
+            "rm": [
+              "hide"
+            ]
+          },
+          {
+            "sel": ".login",
+            "add": [
+              "hide"
+            ]
+          },
+          {
+            "sel": ".error",
+            "add": [
+              "hide"
+            ]
+          }
+        ],
+        "login_error": [
+          {
+            "sel": ".splash",
+            "add": [
+              "hide"
+            ]
+          },
+          {
+            "sel": ".login",
+            "rm": [
+              "hide"
+            ]
+          },
+          {
+            "sel": ".error",
+            "rm": [
+              "hide"
+            ]
+          }
+        ]
+      },
+      "domEvents": [
+        {
+          "on": "click",
+          "selector": ".btn-login",
+          "flow": "loginBtnClick"
+        }
+      ]
+    },
+    "html": [],
+    "css": [],
+    "flow": [
+      [
+        "loginBtnClick",
+        [
+          ":ALTR",
+          {
+            "set": {
+              "email": "$.input-login-email:value",
+              "pass": "$.input-login-password:value"
+            }
+          }
+        ],
+        [">login/flow", "loginUser"]
+      ]
+    ],
+    "markup": [
+      "/root.html"
+    ],
+    "styles": [
+      "/bootstrap/css/bootstrap.min.css",
+      "/bootstrap/css/bootstrap-theme.min.css",
+      "/style.css"
+    ]
+  },
+  "roles": {
+    "*": true
+  },
+  "name": "public_layout",
+  "module": {
+    "client": {
+      "module": [
+        "/modules/view/view.js",
+        "/modules/view/state.js"
+      ]
+    }
+  }
+}

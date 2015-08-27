@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "view": "adioo/view.git",
+    "login": "adioo/login.git",
+    "engine-schema": "jillix/engine-schema.git",
     "engine-ruut": "jillix/engine-ruut.git",
     "engine": "git+ssh://git@github.com/jillix/engine.git"
   },
@@ -30,10 +32,10 @@
   },
   "entrypoints": {
     "public": {
-        "*": "root"
+        "*": "public_router"
     },
     "private": {
-        "*": "root"
+        "*": "private_router"
     }
   },
   "license": "MIT"
