@@ -1,17 +1,16 @@
 {
-  "client": {
-    "config": {
-      "routes": [
-        "homepage",
-        {}
-      ]
-    },
-    "flow": [
-      [
-        "homepage",
-        "homepage/render"
-      ]
+  "config": {
+    "routes": [
+      "homepage",
+      {}
     ]
+  },
+  "flow": {
+    "homepage": {
+      "d": [
+        [":homepage/render", {"tmpl": "layout", "clearList": "true"}]
+      ]
+    }
   },
   "roles": {
     "*": true
